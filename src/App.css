@@ -291,15 +291,15 @@ h1 {
 }
 
 .toast-success {
-  background-color: #28a745;
+  background-color: #4BB543;
 }
 
 .toast-error {
-  background-color: #dc3545;
+  background-color: #FF4C4C;
 }
 
 .toast-info {
-  background-color: #17a2b8;
+  background-color: #42A5F5;
 }
 
 /* Responsive adjustments */
