@@ -1,57 +1,49 @@
-DripLink Subtitle Template Marketplace UI
-A single-page React application for a responsive subtitle template marketplace, built for the DripLink Front End Intern Assignment. Users can browse, add to cart, and purchase subtitle styling templates using a virtual 500-credit system, with state managed via Context API, styling via Tailwind CSS, and purchased templates persisted in localStorage.
-Features
+# 🎬 DripLink Subtitle Template Marketplace UI
 
-Template List: Grid of 5 subtitle templates with name, styled preview, credit cost, and "Add to Cart" button.
-Cart System: Sidebar cart with added templates, total cost, remove option, and "Checkout" button.
-Credit System: Simulates 500 starting credits, deducts on checkout, with toast notifications for success/insufficient credits.
-Purchase Logic: Marks purchased templates, prevents duplicates, saves state in localStorage.
-Extras: Responsive design, smooth animations, toast notifications (react-toastify), Free/Premium filter, and dynamic subtitle preview.
+A single-page React application for a responsive subtitle template marketplace, built as part of the **DripLink Front End Intern Assignment**.
 
-Setup
+Users can browse, add to cart, and purchase subtitle styling templates using a virtual 500-credit system. The app uses **Context API** for state management, **CSS (or TailwindCSS)** for styling, and **localStorage** for persisting purchased templates.
 
-Clone: git clone https://github.com/your-username/driplink-subtitle-marketplace.git
-Navigate: cd driplink-subtitle-marketplace
-Install: npm install
-Run: npm start (opens at http://localhost:3000)
-Build (optional): npm run build
+---
 
-Dependencies
+## 🚀 Features
 
-React 18
-Tailwind CSS
-react-toastify
-uuid
-CDN-hosted React & Babel
+- **🧩 Template List**  
+  Grid of 5 subtitle templates, each with:
+  - Template Name (e.g., Classic, Backdrop)
+  - Styled Subtitle Preview
+  - Credit Cost (e.g., "Free", "200 coins")
+  - "Add to Cart" Button
 
-Approach
+- **🛒 Cart System**  
+  - Sidebar cart view  
+  - Displays selected templates, total cost  
+  - Remove option for each template  
+  - "Checkout" button
 
-State Management: Context API for cart, credits, purchases, and filters.
-Styling: Tailwind CSS with custom effects (neon glow, typewriter animation).
-Persistence: localStorage for purchased templates.
-UX: Animations, ARIA labels, keyboard navigation, memoized components, lazy-loaded toasts.
-Error Handling: Checks for insufficient credits and duplicates with toast feedback.
+- **💰 Credit System**  
+  - Simulated user starts with **500 credits**
+  - Deducts credits on checkout
+  - Toast alerts for:
+    - ✅ Successful purchase
+    - ❌ Insufficient credits
 
-Assumptions
+- **🔐 Purchase Logic**  
+  - Marks templates as "Purchased"
+  - Prevents duplicate purchases
+  - Purchases saved in **localStorage**
 
-Fixed 500-credit balance, no login system.
-One unit per template, client-side data.
-Filter by "available sizes" interpreted as Free/Premium filter.
-Static subtitle preview applies last purchased template's style.
+- **✨ Extras**
+  - Responsive design for mobile and desktop
+  - Smooth UI animations
+  - Toast notifications (via `react-toastify`)
+  - Free/Premium template filter
+  - Dynamic subtitle preview
 
-Improvements
+---
 
-Creative templates with neon, typewriter, and backdrop effects.
-Accessibility with ARIA and keyboard support.
-Performance via memoization and lazy loading.
-Extras: "Clear Cart" button, preview toggle, optional cart persistence.
+## 🛠 Setup Instructions
 
-Future Enhancements
-
-Backend for authentication and dynamic templates.
-Template customization (font size, colors).
-Pagination/infinite scroll for larger libraries.
-Credit purchase system.
-
-Notes
-Meets all requirements with added polish for UX and creativity. Feedback welcome!
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/your-username/driplink-subtitle-marketplace.git
